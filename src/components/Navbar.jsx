@@ -6,7 +6,7 @@ import { RiNotification3Line } from "react-icons/ri";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
-import avatar from "../data/avatar.jpg";
+import avatar from "../data/avatar0.jpg";
 import { Cart, Chat, Notification, UserProfile } from ".";
 import { useStateContext } from "../contexts/ContextProvider";
 
@@ -28,7 +28,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 );
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setScreenSize, currentColor } = useStateContext();
+  const { setActiveMenu, isClicked, handleClick, screenSize, setScreenSize, currentColor } = useStateContext();
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -66,14 +66,14 @@ const Navbar = () => {
         />
         <NavButton
           title="Chat"
-          dotColor="#03C9D7"
+          dotColor="#ff0000"
           customFunc={() => handleClick("chat")}
           color={currentColor}
           icon={<BsChatLeft />}
         />
         <NavButton
           title="Notification"
-          dotColor="#03C9D7"
+          dotColor="#ff0000"
           customFunc={() => handleClick("notification")}
           color={currentColor}
           icon={<RiNotification3Line />}
@@ -90,7 +90,7 @@ const Navbar = () => {
             />
             <p>
               <span className="text-gray-400 text-14">Hi, </span> {' '}
-              <span className="text-gray-400 font-bold ml-1 text-14">Michael</span>
+              <span className="text-gray-400 font-bold ml-1 text-14">Nanda</span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14"/>
           </div>

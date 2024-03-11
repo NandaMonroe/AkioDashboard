@@ -40,7 +40,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern':
-          "url('https://wearethecity.com/wp-content/uploads/2020/04/remote-working-woman-illustration.jpg')",
+          "url('/src/data/bg-hero-pattern.png')",
       },
     },
   },
